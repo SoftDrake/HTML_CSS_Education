@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Andrey">
+    <meta name="description" content="Test">
+    <meta name="keywords" content="Ключевые слова">
+
+    <!--Подлючение CSS, пишется в хедере-->
+    <link rel="stylesheet" href="css/main.css">
+
+    <title>Главная</title>
+  </head>
+
+  <body>
+  <a name="Начало страницы"></a>
+  
+    <!--Заголовки-->
+  <h1>Заголовок 1</h1>
+  <h2>Заголовок 2</h2>
+  <h3>Заголовок 3</h3>
+  <h4>Заголовок 4</h4>
+  <h5>Заголовок 5</h5>
+  <h6>Заголовок 6</h6>
+
+  <!--Абзац-->
+  <p>Новый абзац</p>
+  <p>Новый абзац</p>
+
+  <!--Жирный текст-->
+  <p>
+  <b>Жирный текст</b>
+  <strong>Тоже жирный текст</strong>
+  </p>
+
+  <p>
+  <!--Курсив-->
+  <em>Текст курсивом</em>
+  <I>Тоже корсив</I>
+  </p>
+  
+  <p>
+  <!--Перечеркнутый текст-->
+  <strike>Перечеркнутый текст</strike>
+  </p>
+
+  <p>
+    <!--Смещение ряда + перенос строки br-->
+    H<sub>2</sub>O <br>
+    5<sup>3</sup>
+  </p>
+  <hr>
+
+  <abbr title="Аббревиатура">АББР</abbr><br>
+  
+  <!--Текст чуть меньше/больше-->
+  <small></small>
+  <big></big>
+
+  <!--Отображение текста со всеми переносами строк-->
+  <pre>
+    Тут мы пишим
+    какой то стих
+    а строки сами
+    Переносятся 
+  </pre><br>
+
+  <!--Расположение кода на странице-->
+  <code></code>
+
+  <!--Пронумерованый список, start и type опциональны -->
+  <ol start="2" type="I">
+    <li>Первый</li>
+    <li>Второй</li>
+  </ol><br>
+
+  <!--Непронумерованый список, type опционален-->
+  <ul>
+    <li>Первый</li>
+    <li>Второй</li>
+  </ul>
+
+  <!--Ссылки-->
+  <a href="https://google.com" title="https://google.com" target="_blank">Поисковик</a><br>
+  <a href="index.html" title="Начальная страница" target="_blank">Начальная</a><br>
+  <a href="#Начало страницы">На начало страницы</a><br>
+
+  <!--Добавление картинок, width можно указывать в процентах или пикселях, alt - атрибут на случай если картинка не отображается -->
+  <img src="https://i.pinimg.com/736x/cd/52/8c/cd528ca14509522d092b0cbde00e659f.jpg" width="200"><br>
+  <img src="Eve-Online.jpeg" width="30%"><br>
+
+  <!--Таблицы
+  <thead> = шапка таблицы
+  <tbody> = тело таблицы
+  <tfoot> - низ таблицы
+  <tr> = ряд
+  <th> = столбец жирное оглавление
+  <td> = столбец обычное оглавление
+  border="1" = величина отступа снаружи 1 пиксель (Опциональный)
+  widht="200" = ширина таблицы равна 200 пикселей (Опциональный)
+  align="center" = выравнивание содержимого по центру таблицы (Опциональный)
+
+  -->
+  <table border="1" widht="200">
+    <thead>
+        <th>Имя</th>
+        <th>Фамилия</th>
+    </thead>
+
+    <tbody align="center">
+      <tr>
+        <td>Петя</td>
+        <td>Иванов</td>
+      </tr>
+
+      <tr>
+        <td>Вася</td>
+        <td>Иванов</td>
+      </tr>
+
+      <tr>
+        <td>Люся</td>
+        <td>Иванова</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>Конец</td>
+        <td>Таблицы</td>
+      </tr>
+    </tfoot>
+  </table><br><br>
+
+  <!--Добавление JavaScript, лучше писать в конце body, в scr можно указать локальную папку, ссылку на другую страницу или писать код между открытием и закрытием тега-->
+  <script src=""></script>
+
+  <!--div это блок для обработки css с отступом на новую строку, а span с отступом-->
+  <div>Текст div</div>
+  <div>Текст div</div>
+  <span>Текст span</span>
+  <span>Текст span</span><br><br>
+
+  <!--form, с атрибутом action может передавать данные по указанной ссылке, method - это метод передачи данных-->
+  <!--label - для подписи перед полем. input - поле, атрибут type - тип данных вводимых в него-->
+  <form action="" method="">
+    <label>Введите имя</label>
+    <input type="text" placeholder="Подсказка внутри поля"><br>
+    <input type="submit" value="кнопка с перегарузкой страницы"><br>
+    <textarea placeholder="текстовое поле" maxlength="100"></textarea><br>
+    <input type="button" value="кнопка без перезагрузки"><br><br>
+
+    <!--Селектор-->
+    <select>
+      <option>Первый</option>
+      <option>Второй</option>
+      <option>Третий</option>
+    </select><br><br>
+  </form>
+
+  <!--Теги для удобства подписи частей сайта, adide - это боковая часть сайта-->
+  <header></header>
+  <main></main>
+  <aside></aside>
+  <footer></footer>
+
+  <!--Прогресс бар-->
+  <progress></progress><br>
+  <progress max="100" value="20"></progress><br><br>
+
+  <!--Details-->
+  <details>
+    <Summary>Подробнее</Summary>
+    Тут всякие подробности
+    Даже в несколько строк
+  </details><br><br>
+</html>

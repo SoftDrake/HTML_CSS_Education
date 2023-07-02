@@ -1,0 +1,17 @@
+body {
+  color: rgb(184, 70, 174);
+}
+
+.main-text {
+  color: blue;
+}
+
+.main-text:hover {
+  color: chartreuse;
+  text-decoration: underline;
+  cursor: wait;
+}
+
+.main-text:active {
+  text-decoration: line-through;
+}
